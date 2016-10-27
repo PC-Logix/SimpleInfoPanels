@@ -1,0 +1,16 @@
+[
+{
+  "modid": "simpleinfopanels",
+  "name": "Simple Info Panels",
+  "description": "Info Panels, Simply",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Michiyo"],
+  "credits": "TheMindCrafters for needing this mod made.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
