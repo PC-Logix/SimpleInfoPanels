@@ -4,6 +4,9 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
+import com.pcl.simpleinfopanels.SimpleInfoPanels;
+import com.pcl.simpleinfopanels.tileentities.TileEntityInfoPanel;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
@@ -36,10 +39,8 @@ public class BlockInfoPanel extends Block implements ITileEntityProvider {
 		super(Material.IRON);
 		setHardness(2.0F);
 		setResistance(10.0F);
-		setUnlocalizedName("SimpleInfoPanels.BlockInfoPanel");
-		//setStepSound(Block.soundTypeWood);
+		setUnlocalizedName("simpleinfopanels.BlockInfoPanel");
 		random = new Random();
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -49,7 +50,7 @@ public class BlockInfoPanel extends Block implements ITileEntityProvider {
 		if (tileEntity == null || player.isSneaking()) {
 			return false;
 		}
-		//player.openGui(OpenFM.instance, 0, world, pos.getX(), pos.getY(), pos.getZ());
+		//player.openGui(SimpleInfoPanels.instance, 0, world, pos.getX(), pos.getY(), pos.getZ());
 		return true;
 	}
 	
@@ -165,8 +166,7 @@ public class BlockInfoPanel extends Block implements ITileEntityProvider {
     
 	@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta) {
-		// TODO Auto-generated method stub
-		return null;
+		return new TileEntityInfoPanel();
 	}
 
 }

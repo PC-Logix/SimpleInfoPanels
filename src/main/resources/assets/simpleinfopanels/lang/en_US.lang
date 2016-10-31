@@ -1,0 +1,5 @@
+tile.SIP.InfoPanel.name=Information Panel
+tile.SIP.Info Extender.name=Information Panel Extender
+item.SIP.MemoryCard.name=Memory Card
+itemGroup.SIP.tabSIP=Simple Info Panels
+gui.string.OpenFM.PlayButton=Play
